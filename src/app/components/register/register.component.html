@@ -1,0 +1,22 @@
+<div *ngIf="!connected" class="form-header">
+  <input #username class="au-input au-input-custom" type="text"
+         placeholder="Username"
+         (keyup.enter)="userInput(username.value)"/>
+
+  <input #mdp class="au-input au-input-custom" type="password"
+         placeholder="Mdp"
+         (keyup.enter)="pwdInput(mdp.value)"/>
+
+  <button class="au-btn-submit" (click)="register(username.value,mdp.value)">
+    Login
+  </button>
+
+</div>
+
+<div *ngIf="connected" class="form-header">
+
+  <button class="au-btn-submit" (click)="logout()">
+    Logout
+  </button>
+
+</div>

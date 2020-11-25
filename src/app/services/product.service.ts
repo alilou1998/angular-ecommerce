@@ -10,10 +10,10 @@ import {ProductCategory} from '../common/product-category';
 })
 export class ProductService {
 
-  private baseProductUrl = 'http://localhost:8080/api/products';
-  //private baseProductUrl = 'http://fdb6f7db271a.eu.ngrok.io/api/products';
-  private baseCategoryUrl = 'http://localhost:8080/api/product-category';
-  //private baseCategoryUrl = 'http://fdb6f7db271a.eu.ngrok.io/api/product-category';
+  //private baseProductUrl = 'http://localhost:8080/api/products';
+  private baseProductUrl = 'https://10.72.176.251:8080/api/products';
+  //private baseCategoryUrl = 'http://localhost:8080/api/product-category';
+  private baseCategoryUrl = 'https://10.72.176.251:8080/api/product-category';
 
   constructor(private httpClient: HttpClient) {
   }
