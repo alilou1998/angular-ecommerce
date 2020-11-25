@@ -13,6 +13,7 @@ import {CartItem} from '../../common/cart-item';
 export class ProductDetailsComponent implements OnInit {
 
   product: Product = new Product();
+  hehe: string;
   constructor(private productService: ProductService,
               private cartService: CartService,
               private route: ActivatedRoute) { }

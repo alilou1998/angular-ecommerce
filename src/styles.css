@@ -223,6 +223,11 @@ input.au-input.au-input-xl{
   margin-right:15px
 }
 
+input.au-input.au-input-custom{
+  border-radius:40px!important;
+  margin:0 5px
+}
+
 .au-input{
   line-height:43px;
   border:1px solid #e5e5e5;
@@ -784,6 +789,8 @@ footer ul li{
   padding:10px 20px
 }
 
+
+
 /*
  * ----------------------------
  * Media Queries
@@ -1001,6 +1008,11 @@ footer ul li{
     border-radius:0!important;
     margin-right:0
   }
+  input.au-input.au-input-custom{
+    border-radius: 0!important;
+    margin: 0 5px;
+  }
+
   .cart-area.d-b{
     display:block
   }

@@ -11,7 +11,9 @@ import {map} from 'rxjs/operators';
 export class ShopFormService {
 
   private countriesUrl: string = 'http://localhost:8080/api/countries';
+  //private countriesUrl: string = 'http://fdb6f7db271a.eu.ngrok.io/api/countries';
   private statesUrl: string = 'http://localhost:8080/api/states';
+  //private statesUrl: string = 'http://fdb6f7db271a.eu.ngrok.io/api/states';
 
   getCountries(): Observable<Country[]>{
     return this.httpClient.get<GetResponseCountries>(this.countriesUrl).pipe(
